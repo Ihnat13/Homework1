@@ -68,7 +68,7 @@ compareValue();
 function rozpodilPoModulu() {
     const userRandomNumber = prompt("Enter 5 digit number");    //12345
     
-    if (!isNaN(userRandomNumber) && userRandomNumber.length === 5) {
+    if (userRandomNumber > 0 && Number.isInteger(userRandomNumber) && !isNaN(userRandomNumber) && userRandomNumber.length === 5) {
 
         const digit5 = userRandomNumber % 10; // 12345 / 10 = 1234.5 => 12340 % 10 = 1234 * 10 => 0 => 5 % 10 = 5 
         const digit4 = Math.floor((userRandomNumber % 100) / 10); // (12345 % 100) / 10 = 12345 / 100 = 123.45 => 45 / 10 => 4.5 => math.floor = 4
