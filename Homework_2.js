@@ -78,7 +78,7 @@ function split5DigitNumber() {
         alert('As u wish')
     } else {
         alert("Enter correct value");
-        // split5DigitNumber();
+        split5DigitNumber();
     }
 }
 split5DigitNumber();
