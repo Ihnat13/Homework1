@@ -66,7 +66,7 @@ compareValue();
 function split5DigitNumber() {
     const userRandomNumber = prompt("Enter 5 digit number");    //12345
     
-    if (userRandomNumber > 10000 && !isNaN(userRandomNumber) && userRandomNumber.length === 5) {
+    if (userRandomNumber > 9999 && !isNaN(userRandomNumber) && userRandomNumber.length === 5) {
 
         const digit5 = userRandomNumber % 10; // 12345 / 10 = 1234.5 => 12340 % 10 = 1234 * 10 => 0 => 5 % 10 = 5 
         const digit4 = Math.floor((userRandomNumber % 100) / 10); // (12345 % 100) / 10 = 12345 / 100 = 123.45 => 45 / 10 => 4.5 => math.floor = 4
@@ -78,7 +78,7 @@ function split5DigitNumber() {
         alert('As u wish')
     } else {
         alert("Enter correct value");
-        split5DigitNumber();
+        // split5DigitNumber();
     }
 }
 split5DigitNumber();
